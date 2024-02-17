@@ -1,13 +1,9 @@
 import pygame
 from planets import Planet
-
-WIDTH, HEIGHT = 800, 800
+from constants import *
 
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Planet Simulation")
-
-background_color = (255, 255, 255)  #WHITE
-sun_color = (255, 255, 0)
 
 def main():
     run = True

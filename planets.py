@@ -1,7 +1,6 @@
 import math
 import pygame.draw
-
-WIDTH, HEIGHT = 800, 800
+from constants import *
 
 class Planet:
     AU = 149.6E6 * 1000    # ASTRONOMICAL UNIT : DISTANCE B/W SUN AND EARTH

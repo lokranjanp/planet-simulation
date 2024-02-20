@@ -10,19 +10,19 @@ def main():
     run = True
     clock = pygame.time.Clock()
 
-    sun = Planet(0, 0, 30, sun_color, 1.98892 * 10**30)
+    sun = Planet(0, 0, 30, sun_color, mass_sun)
     sun.sun = True
 
-    mercury = Planet(0.387 * AU, 0, 8, mercury_color, 3.30 * 10**23)
+    mercury = Planet(0.387 * AU, 0, 8, mercury_color, mass_mercury)
     mercury.sun = False
 
-    venus = Planet(0.723 * AU, 0, 14, venus_color, 4.8685 * 10**24)
+    venus = Planet(0.723 * AU, 0, 14, venus_color, mass_mercury)
     venus.sun = False
 
-    earth = Planet(-1 * AU, 0, 16, earth_color, 5.9742 * 10**24)
+    earth = Planet(-1 * AU, 0, 16, earth_color, mass_earth)
     earth.sun = False
 
-    mars = Planet(-1.524 * AU, 0, 12, mars_color, 6.39 * 10**23)
+    mars = Planet(-1.524 * AU, 0, 12, mars_color, mass_mars)
     mars.sun = False
 
     earth.y_vel = earth_y_vel
